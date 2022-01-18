@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eletronic Ballot Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ballotbox">
+      <div class="screen">
+        <div class="d-1">
+          <div class="d-1-left">
+            <div class="d-1-1">
+              <span>YOUR VOTE FOR</span>
+            </div>
+            <div class="d-1-2">
+              <span>CITY COUNCILOR</span>
+            </div>
+            <div class="d-1-3">
+              <div class="number blink"></div>
+              <div class="number"></div>
+            </div>
+            <div class="d-1-4">
+              Name: PETTER BROW<br/>
+              Political Party: ONE<br/>
+              Vice Mayor: MARY JOHNSON
+            </div>
+          </div>
+          <div class="d-1-right">
+            <div class="d-1-image">
+              <img src="images/image.jpg" alt="" />
+              Mayor
+            </div>
+            <div class="d-1-image small">
+              <img src="images/image1.jpg" alt="" />
+              Vice-Mayor
+            </div>
+          </div>
+        </div>
+        <div class="d-2">
+            press the screen:<br/>
+            CONFIRM to confirm this vote<br/>
+            FIX to reset this vote
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="line--keyboard">
+          <div class="keyboard--button" onclick="clicked('1')">1</div>
+          <div class="keyboard--button" onclick="clicked('2')">2</div>
+          <div class="keyboard--button" onclick="clicked('3')">3</div>
+      </div>
+        <div class="line--keyboard">
+          <div class="keyboard--button" onclick="clicked('4')">4</div>
+          <div class="keyboard--button" onclick="clicked('5')">5</div>
+          <div class="keyboard--button" onclick="clicked('6')">6</div>
+        </div>
+        <div class="line--keyboard">
+          <div class="keyboard--button" onclick="clicked('7')">7</div>
+          <div class="keyboard--button" onclick="clicked('8')">8</div>
+          <div class="keyboard--button" onclick="clicked('9')">9</div>
+        </div>
+        <div class="line--keyboard">
+          <div class="keyboard--button" onclick="clicked('0')">0</div>
+        </div>
+        <div class="line--keyboard">
+          <div class="keyboard--button btn--blank"onclick="blank()">BLANK</div>
+          <div class="keyboard--button btn--correct"onclick="correct()">CORRECT</div>
+          <div class="keyboard--button btn--confirm"onclick="confirm()">CONFIRM</div>
+      </div>
+    </div>
+
+    <script src="phases.js"></script>
+    <script src="script.js"></script>
+    <audio srs="sound.mp3"></audio>
+  </body>
+</html>
